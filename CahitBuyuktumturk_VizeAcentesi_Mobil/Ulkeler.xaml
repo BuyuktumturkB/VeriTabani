@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CahitBuyuktumturk_VizeAcentesi_Mobil.Ulkeler">
+    <ScrollView>
+    <StackLayout>
+        <Button Text=" Yeni Ulke " Scale="0.8" x:Name="UlkeEkle"  BackgroundColor="Red"  Clicked="Ulkeekle"/>
+            <Grid RowDefinitions="Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                <Label Text="Ülke Kodu" Margin="10,10,10,10" Grid.Column="0"/>
+                <Label Text="Ülke Adı" Margin="10,10,10,10" Grid.Column="1" />
+                <Label Text="Vize" Margin="10,10,10,10 " Grid.Column="2"/>
+                <Label Text="Telefon" Margin="10,10,10,10" Grid.Column="3"/>
+                <Label Text="Adres" Margin="10,10,10,10" Grid.Column="4"/>
+
+            </Grid>
+            <CollectionView x:Name="Ulke" BackgroundColor="BlanchedAlmond">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                            <Grid RowDefinitions="Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+                                <Label Text="{Binding Countrycode}" Margin="10,10,10,10" Grid.Column="0"/>
+                                <Label Text="{Binding Countryname}" Margin="10,10,10,10" Grid.Column="1" />
+                                <Label Text="{Binding VisaPrice}" Margin="10,10,10,10 " Grid.Column="2"/>
+                                <Label Text="{Binding EmbassyPhone}" Margin="10,10,10,10" Grid.Column="3"/>
+                                <Label Text="{Binding EmbassyAdress}" Margin="10,10,10,10" Grid.Column="4"/>
+                                
+
+                            </Grid>
+
+                            <Grid RowDefinitions="Auto" ColumnDefinitions="*,*">
+                                <Button Text="Düzenle" Grid.Row="0" Grid.Column="0" Scale="0.8" Margin="20,20,20,20" Clicked="UlkeDuzenle" BackgroundColor="Red" />
+                                <Button Text=" Ülke Sil" Grid.Row="0" Grid.Column="1" Scale="0.8" Margin="20,20,20,20" Clicked="UlkeKaldir" BackgroundColor="Red" CommandParameter="{Binding ID}"/>
+                            </Grid>
+                           
+                            
+
+
+                      
+
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

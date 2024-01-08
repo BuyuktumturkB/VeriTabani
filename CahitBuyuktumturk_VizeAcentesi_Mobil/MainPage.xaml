@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CahitBuyuktumturk_VizeAcentesi_Mobil.MainPage">
+    <StackLayout BackgroundColor="White">
+        <Label Text=" Bartın Üniversitesi Bilgisayar Mühendisliği " TextColor="Black" FontSize="24" Margin="20,20,20,20"/>
+        <Label Text=" Final Ödevi " Margin=" 10,10,10,10"/>
+        <Label Text="Vize Acentesi Yönetim Sisteni"/>
+        <Label Text="Cahit Burak Büyüktümtürk"/>
+        <Label Text="18010311004"/>
+    </StackLayout>
+
+          
+
+</ContentPage>

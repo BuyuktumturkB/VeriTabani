@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CahitBuyuktumturk_VizeAcentesi_Mobil</id>
+    <version>1.0.0</version>
+    <authors>CahitBuyuktumturk_VizeAcentesi_Mobil</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-android31.0">
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.552" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.552" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-ios16.1">
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.552" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.552" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.InteropServices.NFloat.Internal" version="6.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-maccatalyst16.1">
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.552" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.552" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.InteropServices.NFloat.Internal" version="6.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-windows10.0.19041">
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.552" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.552" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\cahes\source\repos\CahitBuyuktumturk_VizeAcentesi_Mobil\CahitBuyuktumturk_VizeAcentesi_Mobil\bin\Debug\net6.0-android\CahitBuyuktumturk_VizeAcentesi_Mobil.runtimeconfig.json" target="lib\net6.0-android31.0\CahitBuyuktumturk_VizeAcentesi_Mobil.runtimeconfig.json" />
+    <file src="C:\Users\cahes\source\repos\CahitBuyuktumturk_VizeAcentesi_Mobil\CahitBuyuktumturk_VizeAcentesi_Mobil\bin\Debug\net6.0-android\CahitBuyuktumturk_VizeAcentesi_Mobil.dll" target="lib\net6.0-android31.0\CahitBuyuktumturk_VizeAcentesi_Mobil.dll" />
+    <file src="C:\Users\cahes\source\repos\CahitBuyuktumturk_VizeAcentesi_Mobil\CahitBuyuktumturk_VizeAcentesi_Mobil\bin\Debug\net6.0-android\CahitBuyuktumturk_VizeAcentesi_Mobil.xml" target="lib\net6.0-android31.0\CahitBuyuktumturk_VizeAcentesi_Mobil.xml" />
+    <file src="C:\Users\cahes\source\repos\CahitBuyuktumturk_VizeAcentesi_Mobil\CahitBuyuktumturk_VizeAcentesi_Mobil\bin\Debug\net6.0-ios\iossimulator-x64\CahitBuyuktumturk_VizeAcentesi_Mobil.runtimeconfig.json" target="lib\net6.0-ios16.1\CahitBuyuktumturk_VizeAcentesi_Mobil.runtimeconfig.json" />
+    <file src="C:\Users\cahes\source\repos\CahitBuyuktumturk_VizeAcentesi_Mobil\CahitBuyuktumturk_VizeAcentesi_Mobil\bin\Debug\net6.0-ios\iossimulator-x64\CahitBuyuktumturk_VizeAcentesi_Mobil.dll" target="lib\net6.0-ios16.1\CahitBuyuktumturk_VizeAcentesi_Mobil.dll" />
+    <file src="C:\Users\cahes\source\repos\CahitBuyuktumturk_VizeAcentesi_Mobil\CahitBuyuktumturk_VizeAcentesi_Mobil\bin\Debug\net6.0-maccatalyst\maccatalyst-x64\CahitBuyuktumturk_VizeAcentesi_Mobil.runtimeconfig.json" target="lib\net6.0-maccatalyst16.1\CahitBuyuktumturk_VizeAcentesi_Mobil.runtimeconfig.json" />
+    <file src="C:\Users\cahes\source\repos\CahitBuyuktumturk_VizeAcentesi_Mobil\CahitBuyuktumturk_VizeAcentesi_Mobil\bin\Debug\net6.0-maccatalyst\maccatalyst-x64\CahitBuyuktumturk_VizeAcentesi_Mobil.dll" target="lib\net6.0-maccatalyst16.1\CahitBuyuktumturk_VizeAcentesi_Mobil.dll" />
+    <file src="C:\Users\cahes\source\repos\CahitBuyuktumturk_VizeAcentesi_Mobil\CahitBuyuktumturk_VizeAcentesi_Mobil\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CahitBuyuktumturk_VizeAcentesi_Mobil.runtimeconfig.json" target="lib\net6.0-windows10.0.19041\CahitBuyuktumturk_VizeAcentesi_Mobil.runtimeconfig.json" />
+    <file src="C:\Users\cahes\source\repos\CahitBuyuktumturk_VizeAcentesi_Mobil\CahitBuyuktumturk_VizeAcentesi_Mobil\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CahitBuyuktumturk_VizeAcentesi_Mobil.dll" target="lib\net6.0-windows10.0.19041\CahitBuyuktumturk_VizeAcentesi_Mobil.dll" />
+    <file src="C:\Users\cahes\source\repos\CahitBuyuktumturk_VizeAcentesi_Mobil\CahitBuyuktumturk_VizeAcentesi_Mobil\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri" target="lib\net6.0-windows10.0.19041\resources.pri" />
+  </files>
+</package>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CahitBuyuktumturk_VizeAcentesi_Mobil.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CahitBuyuktumturk_VizeAcentesi_Mobil"
+    Shell.FlyoutBehavior="Flyout">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    
+    <ShellContent Title="Personel" ContentTemplate="{DataTemplate local:Personel}" Route=" Personel" Icon="customer.png" />
+    <ShellContent Title="Müşteri" ContentTemplate="{DataTemplate local:Musteri}" Route="Musteri" Icon="personel.png"/>
+    <ShellContent Title="Ülkeler" ContentTemplate="{DataTemplate local:Ulkeler}" Route="Ulke" Icon="country.png"/>
+    <ShellContent Title="Başvurular" ContentTemplate="{DataTemplate local:Basvuru}" Route="Basvuru" Icon="application.png"/>
+
+
+</Shell>

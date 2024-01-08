@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CahitBuyuktumturk_VizeAcentesi_Mobil.MusteriKayit"
+             Title="MusteriKayit">
+    <StackLayout >
+        <StackLayout Margin="30,30,30,30" BackgroundColor="Aqua">
+            <Grid  RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*">
+                <Label Text="Müşteri id" Grid.Row="0" Grid.Column="0"  Padding="20,20,20,20"/>
+                <Entry  x:Name="Musteriid" Placeholder=""  Grid.Row="0" Grid.Column="1"  BackgroundColor="CadetBlue" Margin="10,10,10,10"/>
+                <Label Text="Müşteri TCKN"  Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="MusteriTCKN" Placeholder="" Keyboard="Numeric" Grid.Column="1" Grid.Row="1" BackgroundColor="CadetBlue" Margin="10,10,10,10"/>
+                <Label Text=" Pasaport Numarası" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="MPN" Placeholder="" Grid.Column="1" Grid.Row="2" BackgroundColor="CadetBlue" Margin="10,10,10,10"/>
+                <Label Text="Müşteri AD" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="Musterisim" Placeholder="" Keyboard="Default" Grid.Column="1" Grid.Row="3" BackgroundColor="CadetBlue" Margin="10,10,10,10"/>
+                <Label Text="Müşteri SOYAD" Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="MusteriSoyisim" Placeholder=""  Grid.Column="1" Grid.Row="4" BackgroundColor="CadetBlue" Margin="10,10,10,10"/>
+                <Label Text="Müşteri Telefon" Grid.Row="5" Grid.Column="0"/>
+                <Entry x:Name="Telefon" Placeholder="" Keyboard="Telephone" Grid.Column="1" Grid.Row="5" BackgroundColor="CadetBlue" Margin="10,10,10,10"/>
+                <Label Text=" Pasaport Geçerlilik " Grid.Row="6" Grid.Column="0"/>
+                <DatePicker x:Name="SonTarih" Grid.Column="1" Grid.Row="6" BackgroundColor="CadetBlue" Margin="10,10,10,10"/>
+
+
+
+            </Grid>
+            <Grid ColumnDefinitions="Auto,Auto" Margin="20,20,20,20">
+                <Button Text=" Kaydet" Grid.Column="0" Clicked="Kaydet" Margin="10,10,10,10" BackgroundColor="DeepPink" />
+                <Button Text=" İptal Et" Grid.Column="1" Clicked="Cancel" Margin="10,10,10,10" BackgroundColor="DeepPink"/>
+            </Grid>
+            
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

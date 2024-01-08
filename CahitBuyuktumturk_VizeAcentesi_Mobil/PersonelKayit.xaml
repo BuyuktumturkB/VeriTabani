@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CahitBuyuktumturk_VizeAcentesi_Mobil.PersonelKayit"
+             Title="PersonelKayit">
+    <StackLayout BackgroundColor="Azure">
+        <StackLayout Margin="20,20,20,20" VerticalOptions="Center">
+            <Label Text=" Personel Numarası" Margin="10,10,10,10" />
+            <Entry x:Name="PersonelNumara" Placeholder="" Margin="10,10,10,10"  BackgroundColor="Aquamarine" />
+            <Label Text=" Personel TCKN" Margin="10,10,10,10"/>
+            <Entry x:Name="PTCKN" Placeholder="" Keyboard="Numeric"   Margin="10,10,10,10" BackgroundColor="Aquamarine"/>
+            <Label Text=" Personel Adı" Margin="10,10,10,10" />
+            <Entry x:Name="PersonelAD" Placeholder="" Margin="10,10,10,10" BackgroundColor="Aquamarine"  />
+            <Label Text=" Personel Soyadı" Margin="10,10,10,10"/>
+            <Entry x:Name="PersonelSoyad" Placeholder="" Margin="10,10,10,10" BackgroundColor="Aquamarine" />
+            <Label Text=" Personel Telefon" Margin="10,10,10,10" />
+            <Entry x:Name="Personeltel" Placeholder="" Keyboard="Numeric" Margin="10,10,10,10" BackgroundColor="Aquamarine" />
+            
+
+
+        </StackLayout>
+        <StackLayout >
+            <Grid ColumnDefinitions="Auto,Auto" Margin="20,20,20,20">
+                <Button Text=" İptal Et" Grid.Column="1" Margin="10,10,10,10" Clicked="Iptal"/>
+                <Button Text="Kaydet" Grid.Column="0" Margin=" 10,10,10,10" Clicked="Kaydet" />
+
+            </Grid>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

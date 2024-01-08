@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CahitBuyuktumturk_VizeAcentesi_Mobil.UlkeEkle"
+             Title="UlkeEkle">
+    <StackLayout >
+        <Label Text="Ülke Ekleme Alanı" Margin="30,30,30,30" VerticalOptions="Center" FontSize="Header"/>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*" Margin="20,20,20,20" VerticalOptions="Center" BackgroundColor="AliceBlue">
+            <Label  Text="Ülke Kodu" Grid.Row="0" Grid.Column="0" Margin="10,10,10,10"/>
+            <Entry x:Name="Ulkekodu" Placeholder=" " Grid.Row="0" Grid.Column="1" Margin="10,10,10,10" BackgroundColor="AntiqueWhite"/>
+            <Label Text=" Ülke Adı" Grid.Row="1" Grid.Column="0" Margin="10,10,10,10"  />
+            <Entry Placeholder=" "  x:Name="UlkeAdi" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" BackgroundColor="AntiqueWhite" />
+            <Label  Text="Vize Ücreti" Grid.Row="2" Grid.Column="0"  Margin="10,10,10,10"/>
+            <Entry x:Name="visa" Placeholder="" Grid.Row="2" Grid.Column="1" Margin="10,10,10,10" BackgroundColor="AntiqueWhite"/>
+            <Label Text="Konsolos Tel:"  Grid.Row="3" Grid.Column="0" Margin="10,10,10,10"/>
+            <Entry x:Name="KonsolosTel" Grid.Row="3" Grid.Column="1" Margin="10,10,10,10" BackgroundColor="AntiqueWhite"/>
+            <Label Text="Konsolosluk Adres" Grid.Row="4" Grid.Column="0" Margin="10,10,10,10" />
+            <Entry Placeholder="" x:Name="KonsoloslukAdres" Grid.Row="4" Grid.Column="1" Margin="10,10,10,10" BackgroundColor="AntiqueWhite" />
+
+
+        </Grid>
+        <Grid ColumnDefinitions="Auto,Auto" RowDefinitions="Auto" Margin="20,20,20,20" VerticalOptions="Center">
+            <Button Grid.Column="0" Text="Kaydet" Clicked="Kaydet" Margin="10,10,10,10"/>
+            <Button Grid.Column="1" Text="Iptal Et" Clicked="Iptal" Margin="10,10,10,10" />
+        </Grid>
+        
+    </StackLayout>
+</ContentPage>

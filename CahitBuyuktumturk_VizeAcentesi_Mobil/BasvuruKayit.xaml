@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CahitBuyuktumturk_VizeAcentesi_Mobil.BasvuruKayit"
+             Title="BasvuruKayit">
+    <StackLayout>
+        
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*" x:Name="Basvurusave" Margin="20,20,20,20" >
+            <Label Text="Başvuru Numarası" Grid.Row="0" Grid.Column="0" Margin="10,10,10,10"  />
+            <Entry x:Name="Basvuruid" Placeholder="" Grid.Row="0" Grid.Column="1" Margin="10,10,10,10"  BackgroundColor="Firebrick"/>
+            <Label Text="Müşteri Numarası" Grid.Row="1" Grid.Column="0" Margin="10,10,10,10"/>
+            <Picker Title="Müşteri Seçin"  x:Name="Musteriid" ItemsSource="{Binding Musteri}" ItemDisplayBinding="{Binding MusteriNumara}"  Grid.Row="1" Grid.Column="1" Margin="10,10,10,10"  BackgroundColor="Firebrick"  />
+            <Label Text=" Personel Numarası" Grid.Row="2" Grid.Column="0" Margin="10,10,10,10" />
+            <Picker Title="Personel Seçin" x:Name="Personelnum" Grid.Row="2" Grid.Column="1" Margin="10,10,10,10" BackgroundColor="Firebrick" />
+            <Label Text="Ülke Numarası" Grid.Row="3" Grid.Column="0" Margin="10,10,10,10"/>
+            <Picker Title="Ülke Seçin" x:Name="Ulkeid" Grid.Row="3" Grid.Column="1" Margin="10,10,10,10"  BackgroundColor="Firebrick"/>
+            <Label Text="Gecmiş Ret Or." Grid.Row="4" Grid.Column="0" Margin="10,10,10,10"/>
+            <Entry x:Name="GecmisRet" Placeholder="" Keyboard="Numeric" Grid.Row="4" Grid.Column="1" Margin="10,10,10,10"  BackgroundColor="Firebrick"/>
+            <Label Text="Toplam Ücret" Grid.Row="5" Grid.Column="0" Margin="10,10,10,10"/>
+            <Entry  x:Name="ucret" Grid.Column="1" Grid.Row="5" Margin="10,10,10,10" Placeholder="" Keyboard="Numeric"  BackgroundColor="Firebrick" />
+        </Grid>
+        <Grid RowDefinitions="Auto" ColumnDefinitions="Auto,Auto">
+            <Button Text=" Kaydet" Grid.Row="0" Grid.Column="0" Clicked="Kaydet"  Margin="15,15,15,15"/>
+            <Button Text=" Iptal Et" Grid.Row="0" Grid.Column="1" Clicked="Iptal" Margin="15,15,15,15"/>
+
+        </Grid>
+    </StackLayout>
+</ContentPage>
